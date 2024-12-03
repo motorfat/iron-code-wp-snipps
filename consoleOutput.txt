@@ -1,0 +1,300 @@
+
+D:\laragon\bin\cmder
+λ cd ..
+
+D:\laragon\bin
+λ cd ..
+
+D:\laragon
+λ cd www
+
+D:\laragon\www
+λ ls
+_plugins/  export_example.php  insan-med/     newpo/  tableTesthtml.html
+bpmn-js/   forest-dream/       media-player/  poker/  wbtask/
+
+D:\laragon\www
+λ git clone https://github.com/southdis/motordev_js.git
+Cloning into 'motordev_js'...
+warning: You appear to have cloned an empty repository.
+
+D:\laragon\www
+λ git username
+git: 'username' is not a git command. See 'git --help'.
+
+D:\laragon\www
+λ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+D:\laragon\www
+λ cd motordev_js
+
+D:\laragon\www\motordev_js(main -> origin)
+λ ls
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git username
+git: 'username' is not a git command. See 'git --help'.
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git add .
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git commit -m "index js init upload"
+[main (root-commit) 71f7a70] index js init upload
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.js
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git remote add origin https://github.com/southdis/motordev_js.git
+error: remote origin already exists.
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git checkoit
+git: 'checkoit' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git checkout
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git branch
+* main
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git push -u origin main
+remote: Permission to southdis/motordev_js.git denied to motorfat.
+fatal: unable to access 'https://github.com/southdis/motordev_js.git/': The requested URL returned error: 403
+
+D:\laragon\www\motordev_js(main -> origin)
+λ git push -u origin main
+remote: Permission to southdis/motordev_js.git denied to motorfat.
+fatal: unable to access 'https://github.com/southdis/motordev_js.git/': The requested URL returned error: 403
+
+D:\laragon\www\motordev_js(main -> origin)
+λ cd ..
+
+D:\laragon\www
+λ git clone https://github.com/motorfat/iron-code-wp-snipps.git
+Cloning into 'iron-code-wp-snipps'...
+warning: You appear to have cloned an empty repository.
+
+D:\laragon\www
+λ cd iron-code-wp-snipps
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ ls
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git branch
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ ls
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ironCodeWPSnipps.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git add .
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git commit -m "upload init"
+[main (root-commit) 0bfc500] upload init
+ 1 file changed, 5 insertions(+)
+ create mode 100644 ironCodeWPSnipps.php
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/motorfat/iron-code-wp-snipps.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git checkout branch test_branch1
+error: pathspec 'branch' did not match any file(s) known to git
+error: pathspec 'test_branch1' did not match any file(s) known to git
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ ls
+ironCodeWPSnipps.php
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git branch devBranch_1
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git checkout devBranch_1
+Switched to branch 'devBranch_1'
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1)
+λ ls
+ironCodeWPSnipps.php
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1)
+λ git status
+On branch devBranch_1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ironCodeWPSnipps.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1)
+λ git add .
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1)
+λ git commit -m "change in other branch"
+[devBranch_1 86aa68e] change in other branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1)
+λ git push -u origin devBranch_1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 344 bytes | 172.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'devBranch_1' on GitHub by visiting:
+remote:      https://github.com/motorfat/iron-code-wp-snipps/pull/new/devBranch_1
+remote:
+To https://github.com/motorfat/iron-code-wp-snipps.git
+ * [new branch]      devBranch_1 -> devBranch_1
+branch 'devBranch_1' set up to track 'origin/devBranch_1'.
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1 -> origin)
+λ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ ls
+ironCodeWPSnipps.php
+
+D:\laragon\www\iron-code-wp-snipps(main -> origin)
+λ git checkout devBranch_1
+Switched to branch 'devBranch_1'
+Your branch is up to date with 'origin/devBranch_1'.
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1 -> origin)
+λ ды
+"ды" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1 -> origin)
+λ ls
+ironCodeWPSnipps.php
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1 -> origin)
+λ git status
+On branch devBranch_1
+Your branch is up to date with 'origin/devBranch_1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        onlyForDevBranch.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1 -> origin)
+λ git add .
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1 -> origin)
+λ git commit -m "only devbranch file"
+[devBranch_1 5d3b41e] only devbranch file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 onlyForDevBranch.php
+
+D:\laragon\www\iron-code-wp-snipps(devBranch_1 -> origin)
+λ git push origin devBranch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 332 bytes | 166.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/motorfat/iron-code-wp-snipps.git
+   86aa68e..5d3b41e  devBranch_1 -> devBranch_1
